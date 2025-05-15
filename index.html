@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل شامل للمواقع وقواعد البيانات للحصول على الكتب والمراجع العلمية</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .cover-page {
+            height: 100vh;
+            background-color: #f0f4f8;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://cdn.jsdelivr.net/gh/tailwindlabs/heroicons@latest/optimized/outline/library.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .amiri {
+            font-family: 'Amiri', serif;
+        }
+        
+        .section-title {
+            border-right: 5px solid #3b82f6;
+            padding-right: 10px;
+        }
+        
+        .database-card {
+            border-right: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .database-card:hover {
+            border-right-color: #3b82f6;
+            background-color: #f0f7ff;
+        }
+        
+        .table-of-contents li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .table-of-contents a {
+            text-decoration: none;
+            color: #3b82f6;
+        }
+        
+        .table-of-contents a:hover {
+            text-decoration: underline;
+        }
+        
+        @media print {
+            .page-break {
+                page-break-after: always;
+            }
+            
+            .no-print-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Cover Page -->
+    <div class="cover-page flex flex-col items-center justify-center text-center p-8">
+        <div class="bg-white shadow-2xl rounded-lg p-12 max-w-3xl">
+            <div class="mb-8">
+                <img src="https://cdn.jsdelivr.net/gh/tailwindlabs/heroicons@latest/optimized/solid/book-open.svg" class="w-24 h-24 mx-auto text-blue-600" alt="كتاب مفتوح">
+            </div>
+            <h1 class="text-4xl font-bold mb-6 text-blue-800">دليل شامل للمواقع وقواعد البيانات</h1>
+            <h2 class="text-3xl font-semibold mb-10 text-blue-700">للحصول على الكتب والمراجع العربية والأجنبية للباحثين</h2>
+            <div class="w-24 h-1 bg-blue-500 mx-auto my-8"></div>
+            <div class="mt-16 amiri">
+                <p class="text-2xl font-bold mb-2">إعداد</p>
+                <p class="text-3xl font-bold text-blue-700">الأستاذ / ياسر محمد</p>
+                <p class="text-xl mt-2">مدير مكتبة كلية الخدمة الاجتماعية</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-8 bg-white my-10 shadow-lg rounded-lg">
+        <!-- Introduction -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">مقدمة</h2>
+            <p class="text-lg leading-loose">
+                يعتبر الوصول إلى المصادر والمراجع العلمية من أهم التحديات التي تواجه الباحثين أثناء إعداد رسائل الماجستير والدكتوراه. مع التطور التكنولوجي المتسارع، أصبحت قواعد البيانات والمكتبات الرقمية خياراً أساسياً للباحثين للوصول إلى أحدث الأبحاث والدراسات والكتب العلمية. يهدف هذا الدليل إلى تقديم مجموعة شاملة من المواقع وقواعد البيانات العربية والأجنبية التي تساعد الباحثين في مختلف التخصصات على الوصول للمراجع اللازمة لإنجاز أبحاثهم بكفاءة وجودة عالية.
+            </p>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="mb-12 p-8 bg-gray-50 rounded-lg no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">جدول المحتويات</h2>
+            <ul class="table-of-contents pr-6 text-lg">
+                <li><a href="#academic-databases">قواعد البيانات الأكاديمية العالمية</a></li>
+                <li><a href="#arabic-databases">قواعد البيانات والمكتبات الرقمية العربية</a></li>
+                <li><a href="#search-engines">محركات البحث العلمي</a></li>
+                <li><a href="#scientific-platforms">منصات النشر العلمي</a></li>
+                <li><a href="#open-access">المصادر مفتوحة الوصول</a></li>
+                <li><a href="#dissertations">مواقع الرسائل الجامعية</a></li>
+                <li><a href="#ebooks">مكتبات الكتب الإلكترونية</a></li>
+                <li><a href="#reference-tools">أدوات إدارة المراجع العلمية</a></li>
+                <li><a href="#impact-factor">معامل التأثير والتصنيفات العالمية</a></li>
+                <li><a href="#access-tips">نصائح للوصول إلى المصادر والمراجع</a></li>
+            </ul>
+        </div>
+
+        <!-- Academic Databases -->
+        <div id="academic-databases" class="mb-16 no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">قواعد البيانات الأكاديمية العالمية</h2>
+            
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">ScienceDirect</h3>
+                        <p class="text-lg mt-2">قاعدة بيانات متخصصة توفرها شركة Elsevier، تضم أكثر من 16 مليون مقالة من 3800 مجلة علمية وأكثر من 39000 كتاب إلكتروني في مختلف التخصصات العلمية والطبية والتقنية والإنسانية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://www.sciencedirect.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.sciencedirect.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Scopus</h3>
+                        <p class="text-lg mt-2">قاعدة بيانات ببليوغرافية واستشهادية شاملة تضم أكثر من 27500 مجلة علمية محكمة ومنشورات مؤتمرات وكتب من ناشرين حول العالم، تغطي مجالات العلوم والتكنولوجيا والطب والعلوم الاجتماعية والفنون والإنسانيات.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">ملخصات واستشهادات</span>
+                        </div>
+                        <a href="https://www.scopus.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.scopus.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Web of Science</h3>
+                        <p class="text-lg mt-2">منصة بحثية تضم مجموعة من قواعد البيانات الببليوغرافية والاستشهادية المشتركة، توفر تغطية شاملة للمجلات والكتب والمؤتمرات ذات جودة عالية. تقدم خدمات تحليل الاستشهادات واكتشاف الاتجاهات البحثية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">ملخصات واستشهادات</span>
+                        </div>
+                        <a href="https://www.webofscience.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.webofscience.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">JSTOR</h3>
+                        <p class="text-lg mt-2">مكتبة رقمية توفر أرشيفاً ضخماً للمجلات الأكاديمية والكتب والمصادر الأولية. تضم أكثر من 12 مليون مقالة وكتاب وغيرها من المحتويات الأكاديمية من 2000 ناشر، مع تركيز على العلوم الإنسانية والاجتماعية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">بعض المحتوى مجاني</span>
+                        </div>
+                        <a href="https://www.jstor.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.jstor.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">ProQuest</h3>
+                        <p class="text-lg mt-2">منصة بحثية شاملة توفر وصولاً إلى مجموعة واسعة من قواعد البيانات المتخصصة التي تضم ملايين المقالات والرسائل الجامعية والصحف والكتب في مختلف التخصصات. تتميز بمجموعتها الضخمة من الرسائل الجامعية العالمية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://www.proquest.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.proquest.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">IEEE Xplore</h3>
+                        <p class="text-lg mt-2">قاعدة بيانات متخصصة توفر وصولاً إلى أكثر من 5 ملايين وثيقة من المحتوى التقني عالي الجودة في مجالات الهندسة الكهربائية والإلكترونية وعلوم الحاسب والمجالات التقنية ذات الصلة.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://ieeexplore.ieee.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">ieeexplore.ieee.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">EBSCO</h3>
+                        <p class="text-lg mt-2">مجموعة من قواعد البيانات الأكاديمية توفر وصولاً إلى آلاف المجلات العلمية والكتب الإلكترونية والأطروحات والتقارير، تغطي مختلف التخصصات. تشمل Academic Search Premier/Ultimate وقواعد متخصصة في مجالات محددة.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">بعض القواعد مجانية</span>
+                        </div>
+                        <a href="https://www.ebsco.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.ebsco.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">SpringerLink</h3>
+                        <p class="text-lg mt-2">منصة توفر وصولاً إلى ملايين الوثائق العلمية من الكتب والمقالات والمراجع، وسلاسل الكتب، ومحتوى المؤتمرات. توفر محتوى في العلوم والتكنولوجيا والطب، بما في ذلك علوم الحياة والكيمياء والفيزياء والرياضيات.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://link.springer.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">link.springer.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arabic Databases -->
+        <div id="arabic-databases" class="mb-16 no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">قواعد البيانات والمكتبات الرقمية العربية</h2>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">دار المنظومة</h3>
+                        <p class="text-lg mt-2">تعد من أكبر قواعد البيانات العربية المتخصصة في المجالات الإنسانية والاجتماعية والإسلامية والتربوية. تضم أكثر من مليون مقالة علمية من آلاف المجلات المحكمة والمؤتمرات وأكثر من 150 ألف رسالة جامعية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://mandumah.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.mandumah.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">المكتبة الرقمية السعودية (SDL)</h3>
+                        <p class="text-lg mt-2">تعد أكبر تجمع للمصادر المعلوماتية في العالم العربي، توفر وصولاً إلى مئات قواعد البيانات العالمية والعربية والمجلات العلمية والكتب الإلكترونية والرسائل الجامعية في جميع التخصصات.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (متاح للجامعات السعودية)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://sdl.edu.sa" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">sdl.edu.sa</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">المعرفة (e-Marefa)</h3>
+                        <p class="text-lg mt-2">قاعدة بيانات شاملة للمحتوى العربي الرقمي تضم آلاف الدوريات والمجلات العلمية المحكمة والكتب وأعمال المؤتمرات والرسائل الجامعية، مع تغطية واسعة لمختلف التخصصات.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://emarefa.net" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.emarefa.net</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">المنهل</h3>
+                        <p class="text-lg mt-2">منصة عربية للمحتوى العلمي والأكاديمي توفر آلاف الكتب والدوريات الإلكترونية العربية من مختلف دور النشر العربية في جميع المجالات، مع تركيز على العلوم الإنسانية والاجتماعية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://almanhal.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.almanhal.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">AskZad (اسك زاد)</h3>
+                        <p class="text-lg mt-2">قاعدة بيانات رقمية عربية تحتوي على أرشيف لأكثر من 300 ألف عنوان من شتى الإصدارات الأكاديمية والثقافية والإعلامية مثل الكتب والرسائل العلمية والمجلات العلمية والصحف والمقالات.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://askzad.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.askzad.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">بوابة الكتاب العلمي</h3>
+                        <p class="text-lg mt-2">منصة إلكترونية عربية تفاعلية تضم قاعدة بيانات واسعة تشمل الآلاف من مصادر المعرفة المتنوعة من المصنفات من الكتب العلمية والرسائل الجامعية في مختلف المجالات الأكاديمية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://thelearnbook.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.thelearnbook.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">مؤسسة هنداوي</h3>
+                        <p class="text-lg mt-2">مكتبة عربية رقمية غير ربحية تقدم آلاف الكتب والمقالات العربية المجانية في مختلف المجالات المعرفية، مع اهتمام خاص بالمحتوى الثقافي والفكري.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://hindawi.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.hindawi.org</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Academic Search Engines -->
+        <div id="search-engines" class="mb-16 no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">محركات البحث العلمي</h2>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Google Scholar</h3>
+                        <p class="text-lg mt-2">محرك بحث متخصص في الأدبيات العلمية والأكاديمية، يتيح البحث في مجموعة واسعة من المصادر بما في ذلك المقالات المحكمة والرسائل الجامعية والكتب والملخصات ومقالات المؤتمرات والتقارير التقنية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">ملخصات + روابط</span>
+                        </div>
+                        <a href="https://scholar.google.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">scholar.google.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Microsoft Academic</h3>
+                        <p class="text-lg mt-2">محرك بحث أكاديمي يستخدم تقنيات الذكاء الاصطناعي لاكتشاف المعلومات وفهم محتوى المنشورات وبناء علاقات بين الباحثين والمؤسسات والمجالات البحثية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">ملخصات + روابط</span>
+                        </div>
+                        <a href="https://academic.microsoft.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">academic.microsoft.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Semantic Scholar</h3>
+                        <p class="text-lg mt-2">محرك بحث علمي مدعوم بالذكاء الاصطناعي، يساعد في اكتشاف الأبحاث ذات الصلة وتسليط الضوء على الأبحاث المؤثرة والنتائج الرئيسية. يغطي مجالات واسعة مع تركيز خاص على علوم الحاسب والطب.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">ملخصات + روابط</span>
+                        </div>
+                        <a href="https://www.semanticscholar.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.semanticscholar.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">BASE (Bielefeld Academic Search Engine)</h3>
+                        <p class="text-lg mt-2">محرك بحث أكاديمي يوفر وصولاً إلى أكثر من 240 مليون وثيقة من أكثر من 8000 مصدر، مع التركيز على المصادر المفتوحة والمستودعات المؤسسية في مختلف أنحاء العالم.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">وصول مفتوح</span>
+                        </div>
+                        <a href="https://www.base-search.net" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.base-search.net</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">RefSeek</h3>
+                        <p class="text-lg mt-2">محرك بحث أكاديمي يستهدف الطلاب والباحثين، يوفر وصولاً إلى أكثر من مليار وثيقة بما في ذلك صفحات الويب والكتب والموسوعات والمجلات والصحف.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">ملخصات + روابط</span>
+                        </div>
+                        <a href="https://www.refseek.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.refseek.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scientific Platforms -->
+        <div id="scientific-platforms" class="mb-16 no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">منصات النشر العلمي</h2>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">ResearchGate</h3>
+                        <p class="text-lg mt-2">شبكة اجتماعية أكاديمية تتيح للباحثين مشاركة أبحاثهم والتواصل مع زملائهم في مختلف أنحاء العالم. تضم أكثر من 20 مليون باحث وتوفر وصولاً إلى ملايين المنشورات العلمية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني (التسجيل مطلوب)</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">تبادل أبحاث</span>
+                        </div>
+                        <a href="https://www.researchgate.net" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.researchgate.net</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Academia.edu</h3>
+                        <p class="text-lg mt-2">منصة للأكاديميين لمشاركة أبحاثهم، تضم أكثر من 175 مليون مستخدم مسجل وأكثر من 24 مليون ورقة بحثية. تسمح للباحثين بمتابعة الأبحاث في مجالاتهم وتتبع تأثير أبحاثهم.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني (التسجيل مطلوب)</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">تبادل أبحاث</span>
+                        </div>
+                        <a href="https://www.academia.edu" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.academia.edu</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Zenodo</h3>
+                        <p class="text-lg mt-2">مستودع مفتوح متعدد التخصصات يسمح للباحثين بإيداع المنشورات، مجموعات البيانات، البرمجيات، التقارير، والأطروحات. مدعوم من المنظمة الأوروبية للأبحاث النووية (CERN).</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">وصول مفتوح</span>
+                        </div>
+                        <a href="https://zenodo.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">zenodo.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">ORCID</h3>
+                        <p class="text-lg mt-2">معرّف رقمي دائم للباحثين يساعد في تمييز الباحثين وربطهم بمنشوراتهم وأنشطتهم البحثية والتمويلية بشكل صحيح، مما يحل مشكلات الأسماء المتشابهة وتغييرات الانتماء المؤسسي.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">هوية الباحث</span>
+                        </div>
+                        <a href="https://orcid.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">orcid.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">arXiv</h3>
+                        <p class="text-lg mt-2">مستودع مفتوح للمطبوعات العلمية في مجالات الفيزياء، الرياضيات، علوم الحاسب، علوم الأحياء الكمية، الاحصاء والاقتصاد المالي. يتيح للباحثين نشر أبحاثهم قبل مراجعة النظراء.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">ما قبل الطباعة</span>
+                        </div>
+                        <a href="https://arxiv.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">arxiv.org</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Open Access -->
+        <div id="open-access" class="mb-16 no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">المصادر مفتوحة الوصول</h2>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">DOAJ (دليل المجلات مفتوحة الوصول)</h3>
+                        <p class="text-lg mt-2">فهرس عبر الإنترنت للمجلات العلمية المحكمة مفتوحة الوصول، يضم أكثر من 18000 مجلة عالية الجودة في مختلف المجالات العلمية والتخصصات الأكاديمية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">وصول مفتوح</span>
+                        </div>
+                        <a href="https://doaj.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">doaj.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">PubMed Central (PMC)</h3>
+                        <p class="text-lg mt-2">مستودع رقمي مفتوح للمقالات البحثية الطبية والحيوية. يحتوي على أكثر من 7 ملايين مقالة علمية كاملة النص، مدعوم من المكتبة الوطنية للطب الأمريكية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">وصول مفتوح</span>
+                        </div>
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.ncbi.nlm.nih.gov/pmc</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">CORE</h3>
+                        <p class="text-lg mt-2">أكبر مجمع للمحتوى العلمي مفتوح الوصول، يتيح الوصول إلى أكثر من 210 مليون مقالة علمية مجمعة من آلاف المستودعات المؤسسية والمجلات مفتوحة الوصول.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">وصول مفتوح</span>
+                        </div>
+                        <a href="https://core.ac.uk" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">core.ac.uk</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">المكتبة الرقمية العالمية (WDL)</h3>
+                        <p class="text-lg mt-2">مشروع مكتبة رقمية دولية بقيادة اليونسكو ومكتبة الكونغرس، يوفر مواد ثقافية مهمة من مكتبات ومؤسسات ثقافية حول العالم، مع تركيز على تعزيز التفاهم والتبادل الثقافي.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">وصول مفتوح</span>
+                        </div>
+                        <a href="https://www.wdl.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.wdl.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Internet Archive</h3>
+                        <p class="text-lg mt-2">مكتبة رقمية غير ربحية توفر وصولاً مجانياً إلى ملايين الكتب والأفلام والموسيقى والبرامج والمواقع الإلكترونية المحفوظة. تحتوي على أكثر من 38 مليون كتاب ونص.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">أرشيف رقمي</span>
+                        </div>
+                        <a href="https://archive.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">archive.org</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dissertations -->
+        <div id="dissertations" class="mb-16 no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">مواقع الرسائل الجامعية</h2>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">ProQuest Dissertations & Theses Global</h3>
+                        <p class="text-lg mt-2">أكبر قاعدة بيانات للرسائل الجامعية في العالم، تضم أكثر من 5 ملايين رسالة ماجستير ودكتوراه من 88 دولة، مع إضافة أكثر من 200 ألف رسالة سنوياً.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://about.proquest.com/en/dissertations" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">about.proquest.com/en/dissertations</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">EBSCO Open Dissertations</h3>
+                        <p class="text-lg mt-2">قاعدة بيانات مفتوحة للرسائل الجامعية توفر وصولاً مجانياً للأطروحات والرسائل العلمية الإلكترونية للباحثين في جميع أنحاء العالم.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">وصول مفتوح</span>
+                        </div>
+                        <a href="https://www.ebsco.com/products/research-databases/ebsco-open-dissertations" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.ebsco.com/products/research-databases/ebsco-open-dissertations</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">OATD (Open Access Theses and Dissertations)</h3>
+                        <p class="text-lg mt-2">مجمع للرسائل الجامعية مفتوحة الوصول من مؤسسات أكاديمية حول العالم، يوفر وصولاً إلى أكثر من 6.4 مليون رسالة علمية من 1100+ مركز بحثي وجامعة.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">وصول مفتوح</span>
+                        </div>
+                        <a href="https://oatd.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">oatd.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">قاعدة الرسائل الجامعية - دار المنظومة</h3>
+                        <p class="text-lg mt-2">قاعدة بيانات متخصصة للرسائل الجامعية العربية، تغطي أكثر من 150 ألف رسالة ماجستير ودكتوراه من الجامعات العربية في مختلف التخصصات.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://mandumah.com/Dissertation" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">mandumah.com/Dissertation</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">EThOS - المكتبة البريطانية</h3>
+                        <p class="text-lg mt-2">مستودع وطني للرسائل الجامعية في المملكة المتحدة، يوفر وصولاً مجانياً لأكثر من 600 ألف رسالة دكتوراه من أكثر من 160 مؤسسة بريطانية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">نص كامل</span>
+                        </div>
+                        <a href="https://ethos.bl.uk" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">ethos.bl.uk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- E-Books -->
+        <div id="ebooks" class="mb-16 no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">مكتبات الكتب الإلكترونية</h2>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">PDF Drive</h3>
+                        <p class="text-lg mt-2">محرك بحث للكتب الإلكترونية بصيغة PDF، يضم أكثر من 80 مليون كتاب في مختلف المجالات، ويتيح تحميلها مجاناً دون الحاجة للتسجيل.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">تحميل مباشر</span>
+                        </div>
+                        <a href="https://www.pdfdrive.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.pdfdrive.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Z-Library</h3>
+                        <p class="text-lg mt-2">مكتبة إلكترونية ضخمة تضم ملايين الكتب الإلكترونية والمقالات العلمية بمختلف الصيغ (PDF, EPUB, MOBI) في شتى المجالات والتخصصات.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">قد يكون محظوراً في بعض البلدان</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">التسجيل مطلوب للتحميل المكثف</span>
+                        </div>
+                        <a href="https://z-lib.is" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">z-lib.is (عنوان قد يتغير)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Project Gutenberg</h3>
+                        <p class="text-lg mt-2">أقدم مكتبة رقمية في العالم، تضم أكثر من 60 ألف كتاب إلكتروني مجاني منتهي حقوق الملكية، معظمها في مجالات الأدب والثقافة والتراث.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">إرث ثقافي</span>
+                        </div>
+                        <a href="https://www.gutenberg.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.gutenberg.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">مكتبة نور</h3>
+                        <p class="text-lg mt-2">واحدة من أكبر المكتبات العربية الإلكترونية، تضم أكثر من 300 ألف كتاب عربي إلكتروني في مختلف التخصصات والمجالات.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني (التسجيل مطلوب)</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">قراءة مباشرة</span>
+                        </div>
+                        <a href="https://www.noor-book.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.noor-book.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Open Library</h3>
+                        <p class="text-lg mt-2">مشروع مفتوح يهدف لتوفير صفحة ويب لكل كتاب تم نشره. تضم أكثر من 20 مليون سجل كتاب، مع إمكانية استعارة الكتب الإلكترونية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني (التسجيل مطلوب)</span>
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">استعارة رقمية</span>
+                        </div>
+                        <a href="https://openlibrary.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">openlibrary.org</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reference Management Tools -->
+        <div id="reference-tools" class="mb-16 no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">أدوات إدارة المراجع العلمية</h2>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Mendeley</h3>
+                        <p class="text-lg mt-2">برنامج مجاني لإدارة المراجع والاستشهادات العلمية، يساعد في تنظيم وتصنيف المراجع البحثية، وتسهيل عملية الاقتباس وتنسيق قائمة المراجع. يتميز بإمكانية قراءة وتعليم ملفات PDF.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني (اشتراك مدفوع للميزات المتقدمة)</span>
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">متوافق مع Word</span>
+                        </div>
+                        <a href="https://www.mendeley.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.mendeley.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Zotero</h3>
+                        <p class="text-lg mt-2">برنامج مفتوح المصدر لإدارة المراجع والاستشهادات العلمية، يسمح بجمع وتنظيم وتصنيف المصادر البحثية بسهولة، مع إمكانية استيراد المراجع تلقائياً من مواقع الويب.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني (رسوم للتخزين الإضافي)</span>
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">متوافق مع المتصفحات</span>
+                        </div>
+                        <a href="https://www.zotero.org" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.zotero.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">EndNote</h3>
+                        <p class="text-lg mt-2">برنامج متكامل لإدارة المراجع والاستشهادات العلمية، يوفر أدوات متقدمة للبحث واستيراد المراجع، وتنظيم الملفات، وإنشاء قوائم المراجع بمختلف الأنماط.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">متوافق مع Word</span>
+                        </div>
+                        <a href="https://endnote.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">endnote.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">RefWorks</h3>
+                        <p class="text-lg mt-2">أداة قائمة على الويب لإدارة المراجع والاستشهادات العلمية، توفر تخزيناً سحابياً للمراجع والمصادر، مع إمكانية التعاون مع الآخرين ومشاركة المجموعات البحثية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (متاح عبر اشتراك المؤسسات)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">قائم على الويب</span>
+                        </div>
+                        <a href="https://www.proquest.com/products-services/refworks.html" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.proquest.com/products-services/refworks.html</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Citavi</h3>
+                        <p class="text-lg mt-2">برنامج شامل لإدارة المراجع والمعرفة، يساعد في تنظيم البحث العلمي بأكمله من جمع المراجع وتنظيمها إلى تخطيط المشروع البحثي وكتابته.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (نسخة مجانية محدودة)</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">إدارة المشاريع البحثية</span>
+                        </div>
+                        <a href="https://www.citavi.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.citavi.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Impact Factor -->
+        <div id="impact-factor" class="mb-16 no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">معامل التأثير والتصنيفات العالمية</h2>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Journal Citation Reports (JCR)</h3>
+                        <p class="text-lg mt-2">مصدر موثوق لتقييم وتصنيف المجلات العلمية، يوفر معامل التأثير (Impact Factor) للمجلات المدرجة في Web of Science، ويعد المقياس الأكثر استخداماً لتقييم أهمية المجلات العلمية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مدفوع (يتطلب اشتراك)</span>
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">معيار عالمي</span>
+                        </div>
+                        <a href="https://jcr.clarivate.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">jcr.clarivate.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Scimago Journal & Country Rank</h3>
+                        <p class="text-lg mt-2">منصة تحليلية توفر مؤشرات جودة وتأثير المجلات العلمية استناداً إلى معلومات من قاعدة بيانات Scopus. يقدم مؤشر SJR كبديل لمعامل التأثير التقليدي.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">تصنيف المجلات والدول</span>
+                        </div>
+                        <a href="https://www.scimagojr.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.scimagojr.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">Scopus Sources</h3>
+                        <p class="text-lg mt-2">قائمة بالمصادر المفهرسة في قاعدة بيانات Scopus، توفر معلومات حول المجلات والكتب والمؤتمرات المدرجة، مع مؤشرات مثل CiteScore وSNIP وSJR.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">تقييم المجلات</span>
+                        </div>
+                        <a href="https://www.scopus.com/sources" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">www.scopus.com/sources</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">معامل التأثير العربي</h3>
+                        <p class="text-lg mt-2">مبادرة لتقييم المجلات العلمية العربية وفق معايير عالمية، تهدف إلى تطوير البحث العلمي باللغة العربية وتقييم تأثير المجلات العربية.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">تصنيف المجلات العربية</span>
+                        </div>
+                        <a href="https://arabimpactfactor.com" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">arabimpactfactor.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="database-card p-6 rounded-lg shadow-md mb-8 bg-white">
+                <div class="flex items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-700">DOAJ Seal</h3>
+                        <p class="text-lg mt-2">شهادة جودة تمنحها DOAJ للمجلات مفتوحة الوصول التي تلتزم بأفضل ممارسات النشر العلمي والشفافية، ويمكن استخدامها كمؤشر لجودة المجلات مفتوحة الوصول.</p>
+                        <div class="mt-4">
+                            <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold ml-2">مجاني</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">الوصول المفتوح</span>
+                        </div>
+                        <a href="https://doaj.org/apply/seal" target="_blank" class="mt-4 inline-block text-blue-600 hover:underline">doaj.org/apply/seal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Access Tips -->
+        <div id="access-tips" class="mb-16 no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">نصائح للوصول إلى المصادر والمراجع</h2>
+
+            <div class="p-6 rounded-lg shadow-md mb-8 bg-white">
+                <h3 class="text-xl font-bold text-blue-700 mb-4">الاستفادة من اشتراكات المكتبات الجامعية</h3>
+                <ul class="list-disc pr-8 text-lg space-y-2">
+                    <li>معظم الجامعات تشترك في قواعد بيانات علمية متعددة، يمكن للطلاب والباحثين استخدامها مجاناً.</li>
+                    <li>تحقق من خدمات الوصول عن بعد (Remote Access) التي توفرها مكتبة جامعتك للوصول إلى قواعد البيانات من خارج الحرم الجامعي.</li>
+                    <li>استفد من خدمات الإعارة بين المكتبات (Interlibrary Loan) للحصول على المواد غير المتوفرة في مكتبة جامعتك.</li>
+                </ul>
+            </div>
+
+            <div class="p-6 rounded-lg shadow-md mb-8 bg-white">
+                <h3 class="text-xl font-bold text-blue-700 mb-4">استخدام المصادر مفتوحة الوصول</h3>
+                <ul class="list-disc pr-8 text-lg space-y-2">
+                    <li>ابحث في المجلات والمستودعات مفتوحة الوصول للعثور على مقالات علمية مجانية ذات جودة عالية.</li>
+                    <li>استخدم محركات البحث المتخصصة في المحتوى مفتوح الوصول مثل CORE و BASE.</li>
+                    <li>تحقق من المطبوعات المسبقة (Preprints) في المستودعات مثل arXiv للحصول على أحدث الأبحاث قبل نشرها الرسمي.</li>
+                </ul>
+            </div>
+
+            <div class="p-6 rounded-lg shadow-md mb-8 bg-white">
+                <h3 class="text-xl font-bold text-blue-700 mb-4">التواصل المباشر مع المؤلفين</h3>
+                <ul class="list-disc pr-8 text-lg space-y-2">
+                    <li>معظم الباحثين مستعدون لمشاركة أبحاثهم عند طلبها بشكل مباشر.</li>
+                    <li>استخدم منصات مثل ResearchGate أو Academia.edu للتواصل مع المؤلفين وطلب نسخ من أبحاثهم.</li>
+                    <li>ابحث عن المؤلف على موقع جامعته أو مؤسسته، ثم تواصل معه عبر البريد الإلكتروني بطلب مهذب.</li>
+                </ul>
+            </div>
+
+            <div class="p-6 rounded-lg shadow-md mb-8 bg-white">
+                <h3 class="text-xl font-bold text-blue-700 mb-4">الاستفادة من النسخ المؤرشفة والبديلة</h3>
+                <ul class="list-disc pr-8 text-lg space-y-2">
+                    <li>استخدم أدوات مثل Unpaywall أو Open Access Button للعثور على نسخ مفتوحة قانونية من المقالات المدفوعة.</li>
+                    <li>ابحث في المستودعات المؤسسية للجامعات، حيث غالباً ما يقوم الباحثون بإيداع نسخ من أبحاثهم فيها.</li>
+                    <li>تحقق من Google Scholar لرؤية إذا كانت هناك نسخ بديلة متاحة للمقالات.</li>
+                </ul>
+            </div>
+
+            <div class="p-6 rounded-lg shadow-md mb-8 bg-white">
+                <h3 class="text-xl font-bold text-blue-700 mb-4">نصائح عامة لتحسين نتائج البحث</h3>
+                <ul class="list-disc pr-8 text-lg space-y-2">
+                    <li>استخدم الكلمات المفتاحية المناسبة والمصطلحات التخصصية في مجالك.</li>
+                    <li>استفد من عوامل التصفية المتقدمة في محركات البحث والقواعد العلمية للحصول على نتائج أكثر دقة.</li>
+                    <li>قم بإنشاء تنبيهات بحثية في قواعد البيانات الرئيسية لتلقي إشعارات بالمنشورات الجديدة في مجال اهتمامك.</li>
+                    <li>استخدم أدوات إدارة المراجع منذ بداية البحث لتنظيم المصادر التي تجدها وتسهيل الاستشهاد بها لاحقاً.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="mb-12 no-print-break">
+            <h2 class="text-2xl font-bold mb-6 section-title text-blue-800">الخاتمة</h2>
+            <p class="text-lg leading-loose">
+                إن الوصول إلى المصادر والمراجع العلمية الموثوقة يعد أحد الركائز الأساسية للبحث العلمي الرصين. يهدف هذا الدليل إلى مساعدة الباحثين في تحديد أفضل المصادر للحصول على المراجع اللازمة لأبحاثهم، سواء كانت عربية أو أجنبية. ومع تطور المكتبات الرقمية وقواعد البيانات الإلكترونية، أصبح من السهل الوصول إلى كم هائل من المعلومات العلمية بطرق مختلفة.
+            </p>
+            <p class="text-lg leading-loose mt-4">
+                نأمل أن يكون هذا الدليل عوناً للباحثين في جميع مراحل البحث العلمي، ونوصي بالتحقق دورياً من تحديثات المواقع وقواعد البيانات المذكورة، حيث أن مجال المعلومات الرقمية متغير باستمرار. كما ننصح بالتواصل مع أمناء المكتبات في مؤسساتكم الأكاديمية للحصول على مزيد من المساعدة والتوجيه بخصوص الموارد المتاحة.
+            </p>
+        </div>
+    </div>
+
+    <footer class="bg-blue-900 text-white py-8 text-center">
+        <div class="container mx-auto">
+            <p class="text-lg">جميع الحقوق محفوظة &copy; 2025</p>
+            <p class="mt-2">إعداد: الأستاذ / ياسر محمد - مدير مكتبة كلية الخدمة الاجتماعية</p>
+        </div>
+    </footer>
+</body>
+</html>
